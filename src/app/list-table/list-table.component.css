@@ -1,0 +1,133 @@
+/* Apply styles to the container */
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the heading */
+h1.mb-3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style the flex-center div */
+.flex-center {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Style labels and input elements */
+label {
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="checkbox"] {
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style buttons */
+button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Style specific buttons */
+.btn-secondary {
+    background-color: #ccc;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #999;
+}
+
+.btn-success {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #45a049;
+}
+
+/* Style the table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style table headers */
+  .table th {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 8px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style table cells */
+  .table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Highlight table rows on hover */
+  .table tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Style links in the table */
+  .table a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  /* Style icons within links */
+  .table a i {
+    margin-right: 4px;
+  }
+
+  .btn-success {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Style the "Select All" and "Clear All" buttons */
+  .btn-secondary.btn-sm {
+    margin-right: 10px;
+  }
+
+  .pagination.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-cell {
+    white-space: nowrap; 
+    overflow: hidden;   
+    text-overflow: ellipsis; 
+    max-width: 550px; 
+}
+
+.desc-cell {
+    white-space: wrap; 
+    overflow: hidden;   
+    text-overflow: ellipsis; 
+    max-width: 150px; 
+}

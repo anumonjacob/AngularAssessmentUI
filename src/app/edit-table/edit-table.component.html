@@ -1,0 +1,41 @@
+<div class="container">
+    <h2>EDIT TABLE</h2>
+    <form #TableData="ngForm" (ngSubmit)="updateTable()">
+        <div class="form-group">
+            <label for="name">Name:<label class="astric">*</label></label>
+            <input type="text" class="form-control field" id="name" name="name" [(ngModel)]="newTable.name" #name="ngModel"
+                required [ngClass]="{'invalid-input': TableData.submitted && name.invalid}" pattern="[A-Za-z0-9\s]+">
+            <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+                Please Enter Valid Name
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="selectedDatatype" class="form-label">Type<label class="astric">*</label></label>
+
+            <select class="form-select" id="selectedtype" name="type" aria-label="select type"
+                [(ngModel)]="newTable.type" #type="ngModel" required
+                [ngClass]="{'invalid-input': TableData.submitted && type.invalid}">
+                <option *ngFor="let values of dropdownOptions" [value]="values">{{ values }}</option>
+            </select>
+            <div *ngIf="type.invalid && (type.dirty || type.touched)" class="alert alert-danger">
+                Please select a type.
+            </div>
+        </div>
+        <div class="form-group premium">
+            <label for="premium">Override Premium:</label>
+                <input class="premium-checkbox"type="checkbox" id="premium" name="premium" [(ngModel)]="newTable.premium">
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea class="form-control field" id="description" name="description" [(ngModel)]="newTable.description"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="comment">comment:</label>
+            <textarea class="form-control field" id="comment" name="comment" [(ngModel)]="newTable.comment"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary button-submit">Submit</button>
+        <button class="btn btn-outline-secondary my-2" routerLink="/">Back -></button>
+    </form>
+</div>
