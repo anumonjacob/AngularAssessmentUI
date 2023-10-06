@@ -20,15 +20,15 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <p><strong>Premium:</strong></p>
+                    <p><strong>Override Premium:</strong></p>
                 </div>
                 <div class="col-md-6">
-                    <p>{{ newTable.premium }}</p>
+                    <p>{{ newTable.premium == 1 ? 'True' : 'False'}}</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <p><strong>description</strong></p>
+                    <p><strong>Description</strong></p>
                 </div>
                 <div class="col-md-6">
                     <p>{{ newTable.description }}</p>
@@ -36,7 +36,7 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <p><strong>comment</strong></p>
+                    <p><strong>Comment</strong></p>
                 </div>
                 <div class="col-md-6">
                     <p>{{ newTable.comment }}</p>

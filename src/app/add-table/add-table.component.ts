@@ -56,6 +56,7 @@ export class AddTableComponent {
         next: (res) => {
           alert("Table Added Successfully")
           this.resetForm();
+          this.router.navigate(['/'])
         },
         error: (e) => {
           alert("Error in Adding New Table")

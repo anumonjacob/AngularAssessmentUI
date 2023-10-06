@@ -17,7 +17,7 @@ export class TableService {
   }
 
   getTableById(id: string) {
-    return this.http.get<any>(`${this.baseUrl}/${id}`)
+    return this.http.get<table>(`${this.baseUrl}/${id}`)
   }
 
   deleteTable(id: string){
@@ -28,8 +28,8 @@ export class TableService {
     return this.http.post<table>(`${this.baseUrl}/`,data)
   }
 
-  editTable = (id:string,data:table)=>{
-    return this.http.put(`${this.baseUrl}/${id}`,data)
+  editTable = (data:table)=>{
+    return this.http.put(`${this.baseUrl}`,data)
   }
 
 }

@@ -3,12 +3,13 @@
 
 
     <div class="flex-center">
-        <label for="searchText">Table Name</label>
+        <label for="searchText"><b>Table Name</b></label>
         <input type="text" id="searchText" [(ngModel)]="searchText">
+        <button type="button" class="btn btn-search" (click)="filterTables()">Search</button>
     </div>
-
+    
     <div class="flex-center">
-        <label for="pagetype">Table Types:</label>
+        <label for="pagetype"><b>Table Types:</b></label>
 
         <input type="checkbox" id="typeCheckbox1" [(ngModel)]="typeCheckbox1">
         <label for="typeCheckbox1">Coverage</label>
@@ -28,16 +29,13 @@
         <label for="typeCheckbox5">Schedule</label>
 
         <div>
+            <button type="button" class="btn btn-secondary btn-sm" (click)="toggleAllCheckboxes()" style="background-color: rgb(47, 61, 187);">SelectAll</button>
 
-
-
-            <button type="button" class="btn btn-secondary btn-sm" (click)="toggleAllCheckboxes()">SelectAll</button>
-
-            <button type="button" class="btn btn-secondary btn-sm" (click)="clearAllCheckboxes()">ClearAll</button>
+            <button type="button" class="btn btn-secondary btn-sm" (click)="clearAllCheckboxes()" style="background-color: rgb(47, 61, 187);">ClearAll</button>
         </div>
     </div>
 
-    <button type="button" class="btn btn-success" (click)="filterTables()">Search</button>
+    
     <div class="mt-3">
         <b>Displaying {{filteredTables.length}} Tables</b>
     </div> 

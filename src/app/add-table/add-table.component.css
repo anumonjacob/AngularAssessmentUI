@@ -7,7 +7,7 @@
 
 }
 
-/* Style the form heading */
+
 h2 {
     font-size: 24px;
     margin-left:150px;
@@ -15,18 +15,18 @@ h2 {
     color: #333;
 }
 
-/* Style the form labels */
+
 label {
     padding: 2px;
     font-weight: bold;
 }
 
-/* Style the asterisk */
+
 .astric {
     color: red;
 }
 
-/* Style the form inputs */
+
 .field {
     width: 100%;
     padding: 10px;
@@ -35,12 +35,12 @@ label {
     border-radius: 4px;
 }
 
-/* Style the invalid input */
+
 .invalid-input {
     border-color: red;
 }
 
-/* Style the select input */
+
 .form-select {
     width: 100%;
     padding: 10px;
@@ -49,7 +49,7 @@ label {
     border-radius: 4px;
 }
 
-/* Style the textarea */
+
 textarea {
     width: 100%;
     padding: 10px;
@@ -58,7 +58,7 @@ textarea {
     border-radius: 4px;
 }
 
-/* Style the submit button */
+
 .button-submit {
     background-color: #007bff;
     color: #fff;
@@ -69,19 +69,19 @@ textarea {
     margin-left: 200px;
 }
 
-/* Hover effect for the submit button */
+
 .button-submit:hover {
     background-color: #0056b3;
 }
 .premium {
     display: flex;
     align-items: center;
-    margin-right: 10px; /* Add margin as needed */
+    margin-right: 10px;
 }
 
 .premium-checkbox {
-    width: auto; /* Set width to auto or an appropriate value */
-    height: auto; /* Set height to auto or an appropriate value */
+    width: auto; 
+    height: auto; 
     margin-left: 25px; 
     margin-bottom: 30x; 
     transform: scale(1.5);

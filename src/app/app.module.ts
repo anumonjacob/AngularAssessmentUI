@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { AddTableComponent } from './add-table/add-table.component';
 import { EditTableComponent } from './edit-table/edit-table.component';
 import { ViewTableComponent } from './view-table/view-table.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ViewTableComponent } from './view-table/view-table.component';
     HeaderComponent,
     AddTableComponent,
     EditTableComponent,
-    ViewTableComponent
+    ViewTableComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

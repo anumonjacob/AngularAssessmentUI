@@ -48,18 +48,17 @@ button {
 }
 
 .btn-secondary:hover {
-    background-color: #999;
+    background-color: #0b0744;
 }
 
-.btn-success {
-    background-color: #4CAF50;
+.btn-search {
+    background-color: #4245e2;
     color: #fff;
 }
 
-.btn-success:hover {
-    background-color: #45a049;
+.btn-search:hover {
+    background-color:#2e30af;
 }
-
 
 .table {
     width: 100%;
@@ -99,10 +98,10 @@ button {
     margin-right: 4px;
   }
 
-  .btn-success {
-    background-color: #28a745;
+  .btn-search {
     color: #fff;
-    padding: 10px 20px;
+    margin-top: 10px;
+    padding: 5px 20px;
     border: none;
     cursor: pointer;
   }

@@ -40,7 +40,7 @@ export class EditTableComponent implements OnInit {
       },
       error: (e) => {
         alert("Error In Getting Data")
-        this.router.navigate(['/formlist'])
+        this.router.navigate(['/'])
       }
     })
   }
@@ -63,10 +63,11 @@ export class EditTableComponent implements OnInit {
       if (this.newTable.premium == true) {
         this.newTable.premium = 1
       }
-      this.tableService.editTable(this.newTable.id, this.newTable).subscribe({
+      this.tableService.editTable(this.newTable).subscribe({
         next: (res) => {
           alert("Table Updated Successfully")
           this.getTableData(this.newTable.id);
+          this.router.navigate(['/']);
         },
         error: (e) => {
           alert("Error in Adding New Table")

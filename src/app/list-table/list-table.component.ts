@@ -9,7 +9,7 @@ import { TableService } from '../Service/table.service';
 export class ListTableComponent implements OnInit {
 
 
-  filteredTables: any;
+  filteredTables: any = [];
   lengthofData = 0;
   totalLength: number = 0;
   searchText: string = '';
